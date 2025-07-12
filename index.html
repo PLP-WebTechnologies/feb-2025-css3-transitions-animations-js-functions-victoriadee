@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to My Interactive Site 🎉</h1>
+
+  <!-- Button to change text color -->
+  <button id="colorBtn">Click Me!</button>
+  <p id="colorText">Watch me change color.</p>
+
+  <!-- Image Gallery -->
+  <div class="gallery">
+    <img id="galleryImage" src="https://via.placeholder.com/300x200" alt="Gallery Image">
+    <button id="nextImage">Next Image</button>
+  </div>
+
+  <!-- Tab System -->
+  <div class="tabs">
+    <button class="tab" data-target="tab1">Tab 1</button>
+    <button class="tab" data-target="tab2">Tab 2</button>
+    <div id="tab1" class="tab-content">This is content for Tab 1.</div>
+    <div id="tab2" class="tab-content hidden">This is content for Tab 2.</div>
+  </div>
+
+  <!-- Form with validation -->
+  <form id="signupForm">
+    <h2>Sign Up</h2>
+    <label>Email: <input type="email" id="email" required></label><br>
+    <span id="emailFeedback"></span><br>
+    <label>Password: <input type="password" id="password" required></label><br>
+    <span id="passwordFeedback"></span><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
